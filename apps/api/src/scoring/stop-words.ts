@@ -1,0 +1,26 @@
+// English function words plus generic job-advert filler. These never count as keywords.
+export const STOP_WORDS: ReadonlySet<string> = new Set([
+  'a', 'about', 'above', 'after', 'again', 'against', 'all', 'also', 'am', 'an', 'and', 'any', 'are',
+  'as', 'at', 'be', 'because', 'been', 'before', 'being', 'below', 'between', 'both', 'but', 'by',
+  'can', 'could', 'did', 'do', 'does', 'doing', 'down', 'during', 'each', 'few', 'for', 'from',
+  'further', 'had', 'has', 'have', 'having', 'he', 'her', 'here', 'hers', 'him', 'his', 'how', 'i',
+  'if', 'in', 'into', 'is', 'it', 'its', 'just', 'me', 'more', 'most', 'my', 'no', 'nor', 'not',
+  'now', 'of', 'off', 'on', 'once', 'only', 'or', 'other', 'our', 'ours', 'out', 'over', 'own',
+  'same', 'she', 'should', 'so', 'some', 'such', 'than', 'that', 'the', 'their', 'theirs', 'them',
+  'then', 'there', 'these', 'they', 'this', 'those', 'through', 'to', 'too', 'under', 'until', 'up',
+  'very', 'was', 'we', 'were', 'what', 'when', 'where', 'which', 'while', 'who', 'whom', 'why',
+  'will', 'with', 'would', 'you', 'your', 'yours', 'etc', 'eg', 'ie', 'vs', 'via', 'per',
+  // generic job-advert filler
+  'able', 'across', 'ability', 'background', 'candidate', 'company', 'day', 'days', 'excellent',
+  'experience', 'experienced', 'familiarity', 'good', 'great', 'including', 'join', 'job', 'knowledge',
+  'looking', 'must', 'needed', 'need', 'new', 'nice', 'opportunity', 'plus', 'preferred', 'related',
+  'required', 'requirements', 'role', 'strong', 'successful', 'team', 'teams', 'time', 'understanding',
+  'use', 'using', 'work', 'working', 'year', 'years', 'bonus', 'ideal', 'like', 'get', 'part', 'full',
+  'sample', 'engineer', 'engineers', 'senior', 'junior', 'mindset', 'fast', 'care', 'build', 'builds',
+  'building', 'application', 'applications', 'collaborative', 'side', 'systems', 'system', 'skills',
+  'skill', 'role', 'roles', 'accessible', 'level', 'proven', 'hands', 'month', 'months', 'willing',
+  'passion', 'passionate', 'environment', 'culture', 'exciting', 'challenging', 'driven', 'motivated',
+  'detail', 'details', 'attention', 'ensure', 'ensuring', 'deliver', 'delivering', 'drive', 'driving',
+  'contribute', 'contributing', 'solve', 'solving', 'solution', 'solutions', 'ownership', 'own',
+  'communicate', 'across', 'around', 'within', 'about', 'other', 'many', 'much', 'every', 'any',
+]);

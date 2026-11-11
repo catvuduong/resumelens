@@ -1,5 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { DbService } from './db.service.js';
+import { isAiEnabled } from './analyses/groq.js';
 
 export interface Item {
   id: number;
@@ -22,6 +23,10 @@ export class AppService {
     } catch {
       return { status: 'ok', db: 'down' };
     }
+  }
+
+  capabilities(): { ai: boolean } {
+    return { ai: isAiEnabled() };
   }
 
   listItems(): Promise<Item[]> {

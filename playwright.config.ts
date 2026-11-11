@@ -12,6 +12,9 @@ export default defineConfig({
       url: 'http://localhost:3001/health',
       reuseExistingServer: !process.env.CI,
       timeout: 60_000,
+      // Force the no-key state: a GROQ_API_KEY in the developer's shell must not leak into the e2e run.
+      // Tests that need the AI path mock /capabilities and /rewrite themselves (see e2e/rewrite.spec.ts).
+      env: { GROQ_API_KEY: '' },
     },
     {
       command: 'npm run start --workspace web',

@@ -15,6 +15,11 @@ export class AppController {
     return this.appService.health();
   }
 
+  @Get('capabilities')
+  capabilities() {
+    return this.appService.capabilities();
+  }
+
   @Get('items')
   listItems() {
     return this.appService.listItems();
